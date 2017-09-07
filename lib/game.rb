@@ -12,7 +12,7 @@ class Game
     @number_of_errors = 0
     @good_letters = []
     @bad_letters = []
-    @status = :in_progress # :won, :lost
+    @status = :in_progress # :win, :lose
   end
 
   def next_step(letter)
