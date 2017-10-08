@@ -3,7 +3,7 @@ class WordReader
     if File.exist?(file_name)
       lines = File.readlines(file_name).sample.chomp
     else
-      puts "Запрашиваемый файл отсутствует!"
+      raise "Запрашиваемый файл отсутствует!"
     end
   end
 end
